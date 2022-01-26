@@ -9,13 +9,13 @@ const joined = `${ex1} and I am ${age} years old`; // ako spojit stringy
 console.log(joined);
 
 
-const players = ["Martin", "Thomas", "Peter", "Mathias", "Niki"]; // ako spojit string a vybrat s arraya
+const players = ["Martin", "Thomas", "Peter", "Mathias", "Niki"];
 const sentence = "The most valuable player of the match is";
-const winner = `${sentence}  ${players[0]}`;
+const winner = `${sentence}  ${players[0]}`; // ako spojit string a vybrat z arraya
 console.log(winner);
 
 
-const brands = ["Tesla", "Audi", "Renault", "Volvo", "Mazda", "Fiat", "Ferrari"]; // ako sortovat abecedne v arrayi
+const brands = ["Tesla", "Audi", "Renault", "Volvo", "Mazda", "Fiat", "Ferrari"]; // ako sortovat abecedne v array
 console.log(brands.sort());
 
 const fruits = ["apple", "banana", "kiwi"]; // ako doplnat a odoberat do array prikaz push osobitne ,nemoze byt hned console.log
@@ -96,7 +96,13 @@ console.log(multiCh[4][4]);
 
 
 // how to remove $ sign from string //
-var sentence = "Properties,$a$set$of$immutable$values,$are$passed$to$a$components$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it, $but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism 's$promise$is$expressed$as$properties $flow$down;$actions$flow$up.";
-var temp = new Array();
-temp = sentence.split('$');
-document.write(temp.join(' '));
+var text = "Properties,$a$set$of$immutable$values,$are$passed$to$a$components$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it, $but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism 's$promise$is$expressed$as$properties $flow$down;$actions$flow$up.";
+var temp = new Array(); // znamena vytvorim prosto pole uplne prazdne
+temp = text.split('$'); // a teraz to pole naplnim ALE vysplitim $
+document.write(temp.join(' ')); // a tu joinem medzeru
+
+// document.write(text.replaceAll("$", " "));
+
+// tricks !!!!!!!!!!!!!!!!!!!!
+
+var name = prompt("Please type your name"); // input od uzivatela a to sa ulozi do premeny name
