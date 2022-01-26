@@ -94,7 +94,9 @@ console.log(multiCh[3][3]);
 console.log(multiCh[4][4]);
 
 
-var al = "Properties,$a$set$of$immutable$values,$are$passed$to$a$components$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it, $but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism 's$promise$is$expressed$as$properties $flow$down;$actions$flow$up.";
+
+// how to remove $ sign from string //
+var sentence = "Properties,$a$set$of$immutable$values,$are$passed$to$a$components$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it, $but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism 's$promise$is$expressed$as$properties $flow$down;$actions$flow$up.";
 var temp = new Array();
-temp = al.split('$');
+temp = sentence.split('$');
 document.write(temp.join(' '));
