@@ -30,8 +30,16 @@ console.log(animals);
 animals.unshift("cat");
 console.log(animals);
 
-const anotherFrutis = ["mango", "cherries", "kiwi", "grapes", "pear", "peach", "orange", "lemon"];
-console.log(anotherFrutis); // how to make it on sep.line ?
+//const anotherFrutis = ["mango", "cherries", "kiwi", "grapes", "pear", "peach", "orange", "lemon"];
+//console.log(anotherFrutis); // how to make it on sep.line ?
+
+// ako spravit osobitne na riadku
+var fruitss = "mango/cherries/kiwi/grapes/pear/peach/orange/lemon";
+var temp = new Array();
+temp = fruitss.split('/');
+document.write(temp.join('<br>'));
+
+
 
 
 
@@ -59,9 +67,6 @@ var result = plus / multiple;
 console.log(result);
 
 
-//c.toNumber();
-//d.toNumber();
-//
 
 const multi = [
     [1, 2, 1, 24],
@@ -73,3 +78,23 @@ const multi = [
     [3, 5, 26, 3]
 ];
 console.log(multi[1][1], multi[4][2], multi[5][3], multi[2][1]);
+
+const multiCh = [
+    ["Vienna", 0, 0, 0, 0],
+    [0, "is", 0, 0, 0],
+    [0, 0, "a", 0, 0],
+    [0, 0, 0, "nice", 0],
+    [0, 0, 0, 0, "city"]
+];
+//console.log(multiCh[0][0], multiCh[1][1], multiCh[2][2], multiCh[3][3], multiCh[4][4]);//
+console.log(multiCh[0][0]);
+console.log(multiCh[1][1]);
+console.log(multiCh[2][2]);
+console.log(multiCh[3][3]);
+console.log(multiCh[4][4]);
+
+
+var al = "Properties,$a$set$of$immutable$values,$are$passed$to$a$components$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it, $but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism 's$promise$is$expressed$as$properties $flow$down;$actions$flow$up.";
+var temp = new Array();
+temp = al.split('$');
+document.write(temp.join(' '));
